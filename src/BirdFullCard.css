@@ -1,0 +1,49 @@
+.birdFull-left img {
+    width: 495px;
+    height: 495px;
+    border-radius: 10%;
+    position: relative;
+    /* max-width: 100%;
+    max-height: 100%; */
+
+    
+}
+
+.birdFull-left {
+    margin-left: 5%;
+}
+
+.birdFull-right {
+    margin-left: 15%;
+}
+
+.birdFull-left h3{
+    color: rgb(250, 223, 188);
+    font-size: 250%;
+}
+
+.birdFull-left button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 24px 48px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: rgb(175, 230, 224); 
+    color: black; 
+    border: 2px solid #4CAF50;
+    border-radius: 12px;
+
+
+}
+
+.birdFull button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
