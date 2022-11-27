@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+  font-family: var(--font-roboto);
+  background-color: #212426;
+  background-image: url("http://wallpaperstock.net/origami-birds_wallpapers_53514_852x480.jpg");
+  height: 100%;
+  background-position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainApp {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+}
+
+h1 {
+  padding: 2rem;
+
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  align-items:  center;
+  font-size: 3rem;
+  letter-spacing: 0.9px;
+  background: linear-gradient(
+    90deg,
+    rgb(34, 33, 33) 70%,
+    rgba(223, 130, 54, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
 }
 
-.App-link {
-  color: #61dafb;
+.bird img {
+  width: 155px;
+  height: 155px;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.bird img:hover {
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bird h3 {
+  color: #342a2a;
+}
+
+
+.scroll-left {
+  overflow-y: scroll;
+  flex: 1;
+
+  align-items: center;
+  background: rgb(142, 191, 234);
+  height: 86vh;
+
+}
+
+.center {
+  flex: 6;
+  background: rgba(249, 211, 180, 0)
+}
+
+.empty {
+  color: rgba(249, 211, 180, 1);
+  margin-left: 5%;
+}
+
+.empty h2{
+  color: rgb(19, 17, 16);
+  font-size: 42px;
+
+}
+
+.empty h3{
+  color: #342a2a;
 }
